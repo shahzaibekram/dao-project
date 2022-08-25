@@ -1,0 +1,24 @@
+body {
+    font-family: 'lato', sans-serif;
+  }
+  
+  .center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    border-color: white !important;
+    color: black !important;
+  }
+
+  .heading{
+    font-size: 25px !important;
+  }
+  /* tr, th{
+    width: 200p !important;
+  } */
+  

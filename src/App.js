@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import './App.css';
+import Header from './Components/Header';
+// import Demo from './Pages/Demo';
+import Demo from "./Pages/Demo";
+import Proposal from "./Pages/Proposal";
+
+
+const style = {
+  wrapper: `h-screen max-h-screen h-min-screen w-screen bg-[#2D242F]
+  text-white select-none flex-col justify-between`
+}
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style.wrapper}>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Demo />} />
+        <Route path="/proposal" element={<Proposal />} />
+        {/* <Route path="/proposal" element={<Proposal />} /> */}
+      </Routes>
     </div>
   );
 }
