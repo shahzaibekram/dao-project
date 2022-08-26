@@ -4,6 +4,7 @@ import Header from './Components/Header';
 // import Demo from './Pages/Demo';
 import Demo from "./Pages/Demo";
 import Proposal from "./Pages/Proposal";
+import NewProposal from "./Pages/NewProposal";
 
 
 const style = {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Demo />} />
         <Route path="/proposal" element={<Proposal />} />
+        <Route path="/new-proposal" element={<NewProposal />} />
         {/* <Route path="/proposal" element={<Proposal />} /> */}
       </Routes>
     </div>

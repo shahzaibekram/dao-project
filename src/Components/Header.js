@@ -19,7 +19,7 @@ const Header = () => {
                         <Link  to='/'>DAO</Link>
                     </div>
 
-                    <Link className={style.navItem} to='/proposal'>Proposal</Link>
+                    <Link className={style.navItem} to='/new-proposal'>Proposal</Link>
                     <Link className={style.navItem} to='/result'>Result</Link>
                 </div>
             </div>
