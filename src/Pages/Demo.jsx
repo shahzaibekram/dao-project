@@ -40,6 +40,11 @@ const Demo = () => {
 
 
             <section>
+
+                <div>
+                    <h1 className="heading">Governance Overview</h1>
+                </div>
+
                 <table className=" bg-gray-100 center">
                     <tr>
                         <th className="border text-left px-8 py-4">ID</th>
